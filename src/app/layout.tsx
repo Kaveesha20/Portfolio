@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: ["Kaveesha", "AI Engineer", "Machine Learning", "Computer Engineering", "Portfolio", "Next.js", "MLOps"],
   authors: [{ name: "Kaveesha" }],
   openGraph: {
-    title: "Kaveesha | Computer Engineering Graduate | AI/ML Engineer",
+    title: "Kaveesha Nirmani| Computer Engineering Undergraduate ",
     description: "Portfolio website showcasing AI/ML projects and full-stack development work.",
     type: "website",
   },

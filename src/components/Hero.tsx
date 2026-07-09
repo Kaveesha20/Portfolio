@@ -18,7 +18,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Kaveesha
+            Kaveesha Nirmani
           </motion.h1>
 
           <motion.h2
@@ -27,7 +27,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
-            Computer Engineering Graduate | AI/ML Engineer
+            Computer Engineering Undergraduate 
           </motion.h2>
 
           <motion.p
