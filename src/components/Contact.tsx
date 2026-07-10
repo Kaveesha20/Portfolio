@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <motion.a
-                href="mailto:[YOUR_EMAIL]"
+                href="mailto:kaveeshanirmani25@gmail.com"
                 className="bg-slate-800 p-6 rounded-lg text-center hover:shadow-xl transition-shadow"
                 whileHover={{ y: -5 }}
               >
@@ -29,11 +29,11 @@ const Contact = () => {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold mb-1">Email</h3>
-                <p className="text-gray-400 text-sm">[YOUR_EMAIL]</p>
+                <p className="text-gray-400 text-sm">kaveeshanirmani25@gmail.com</p>
               </motion.a>
 
               <motion.a
-                href="https://linkedin.com/in/[YOUR_LINKEDIN]"
+                href="https://www.linkedin.com/in/kaveesha-nirmani-795671242"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-slate-800 p-6 rounded-lg text-center hover:shadow-xl transition-shadow"
@@ -45,7 +45,7 @@ const Contact = () => {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold mb-1">LinkedIn</h3>
-                <p className="text-gray-400 text-sm">[YOUR_LINKEDIN]</p>
+                <p className="text-gray-400 text-sm">kaveesha-nirmani-795671242</p>
               </motion.a>
 
               <motion.a

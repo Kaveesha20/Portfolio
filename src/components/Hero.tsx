@@ -36,8 +36,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            Passionate about building intelligent systems and full-stack applications.
-            Specializing in applied AI/ML, MLOps, and modern web technologies.
+            Passionate about building intelligent systems and full stack applications.
+            Specializing in applied AI/ML and modern web technologies.
           </motion.p>
 
           <motion.div
@@ -47,7 +47,9 @@ const Hero = () => {
             transition={{ delay: 0.8 }}
           >
             <motion.a
-              href="[YOUR_RESUME_URL]"
+              href="/Kaveesha%20Nirmani.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-semibold transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

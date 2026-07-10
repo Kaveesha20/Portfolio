@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kaveesha | Computer Engineering Graduate | AI/ML Engineer",
-  description: "Portfolio website of Kaveesha - Computer Engineering Graduate specializing in AI/ML, Full-Stack Development, and MLOps. View projects, skills, and experience.",
-  keywords: ["Kaveesha", "AI Engineer", "Machine Learning", "Computer Engineering", "Portfolio", "Next.js", "MLOps"],
+  title: "Kaveesha | Computer Engineering Graduate ",
+  description: "Portfolio website of Kaveesha - Computer Engineering Graduate specializing in AI/ML, Full Stack Development and MLOps. View projects, skills, and experience.",
+  keywords: ["Kaveesha", "AI Engineer", "Machine Learning", "Computer Engineering", "Portfolio", "Next.js"],
   authors: [{ name: "Kaveesha" }],
   openGraph: {
     title: "Kaveesha Nirmani| Computer Engineering Undergraduate ",
-    description: "Portfolio website showcasing AI/ML projects and full-stack development work.",
+    description: "Portfolio website showcasing AI/ML projects and full stack development work.",
     type: "website",
   },
 };

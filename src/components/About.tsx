@@ -23,26 +23,11 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              I am a Computer Engineering undergraduate at the University of Ruhuna, Sri Lanka, graduating in August 2026. My academic journey has equipped me with a strong foundation in both hardware and software systems, with a particular focus on artificial intelligence and machine learning.
-            </motion.p>
+I am a Computer Engineering undergraduate at the University of Ruhuna (2026) with a passion for Artificial Intelligence, Machine Learning, and Full Stack Development. During my AI Engineer internship at Sri Lanka Telecom PLC, I gained hands on experience building AI solutions for real world applications. I enjoy developing scalable, intelligent software that creates meaningful impact.            </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-            >
-              Currently, I am an AI Engineer Trainee intern at Sri Lanka Telecom (SLT), where I am gaining hands-on experience in developing and deploying AI solutions for real-world problems. This internship has deepened my expertise in natural language processing, speech recognition, and building production-ready ML systems.
-            </motion.p>
+          
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6 }}
-            >
-            My passion lies at the intersection of applied AI/ML and full-stack development. I enjoy creating end-to-end solutions that leverage cutting-edge AI technologies while maintaining robust, scalable software architecture. Whether it is building intelligent recommendation systems or deploying ML models with proper CI/CD pipelines, I strive to deliver impactful and efficient solutions.
-            </motion.p>
+           
           </div>
         </motion.div>
       </div>

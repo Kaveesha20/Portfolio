@@ -6,10 +6,10 @@ const Experience = () => {
   const experiences = [
     {
       title: "AI Engineer Trainee",
-      company: "Sri Lanka Telecom (SLT)",
-      period: "2024 - Present",
+      company: "Sri Lanka Telecom PLC",
+      period: "May 2025 - Nov 2025",
       description:
-        "Working on AI/ML projects including Natural Language Processing, Speech Recognition, and building production-ready ML systems. Developing and deploying AI solutions for real-world business problems.",
+        "Worked on AI/ML projects including Natural Language Processing, Speech Recognition and building production ready ML systems. Developing and deploying AI solutions for real world business problems.",
     },
   ];
 
