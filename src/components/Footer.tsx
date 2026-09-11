@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-950 text-white py-8">
+    <footer className="bg-background-deep text-foreground py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,7 +20,7 @@ const Footer = () => {
               href="https://github.com/Kaveesha20"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-green-400 transition-colors"
+              className="text-foreground-muted hover:text-accent transition-colors"
             >
               <span className="sr-only">GitHub</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@ const Footer = () => {
               href="https://linkedin.com/in/[YOUR_LINKEDIN]"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-500 transition-colors"
+              className="text-foreground-muted hover:text-primary-light transition-colors"
             >
               <span className="sr-only">LinkedIn</span>
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -42,7 +42,7 @@ const Footer = () => {
 
             <a
               href="mailto:[YOUR_EMAIL]"
-              className="text-gray-400 hover:text-green-400 transition-colors"
+              className="text-foreground-muted hover:text-accent transition-colors"
             >
               <span className="sr-only">Email</span>
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <p className="text-gray-400 text-sm">
+          <p className="text-foreground-muted text-sm">
             &copy; {currentYear} Kaveesha. All rights reserved.
           </p>
         </motion.div>

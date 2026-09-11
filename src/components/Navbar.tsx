@@ -26,14 +26,14 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-slate-900/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <motion.a
             href="#"
-            className="text-xl font-bold text-white"
+            className="text-xl font-bold text-foreground"
             whileHover={{ scale: 1.05 }}
           >
             Kaveesha
@@ -44,7 +44,7 @@ const Navbar = () => {
               <motion.a
                 key={link.href}
                 href={link.href}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-foreground-muted hover:text-foreground transition-colors"
                 whileHover={{ y: -2 }}
               >
                 {link.label}
@@ -53,7 +53,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,13 +70,13 @@ const Navbar = () => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden bg-slate-800 rounded-lg mt-2 p-4"
+            className="md:hidden bg-surface rounded-lg mt-2 p-4"
           >
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block py-2 text-gray-300 hover:text-white"
+                className="block py-2 text-foreground-muted hover:text-foreground"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.label}

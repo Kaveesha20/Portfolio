@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-16">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-surface to-background text-foreground pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ const Hero = () => {
           </motion.h1>
 
           <motion.h2
-            className="text-xl sm:text-2xl md:text-3xl text-green-400 mb-6"
+            className="text-xl sm:text-2xl md:text-3xl text-accent mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
@@ -31,7 +31,7 @@ const Hero = () => {
           </motion.h2>
 
           <motion.p
-            className="text-lg sm:text-xl text-gray-300 mb-8 max-w-2xl mx-auto"
+            className="text-lg sm:text-xl text-foreground-muted mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -50,7 +50,7 @@ const Hero = () => {
               href="/Kaveesha%20Nirmani.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-green-600 hover:bg-green-700 rounded-lg font-semibold transition-colors"
+              className="px-8 py-3 bg-primary hover:bg-primary-dark text-background rounded-lg font-semibold transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -59,7 +59,7 @@ const Hero = () => {
 
             <motion.a
               href="#contact"
-              className="px-8 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors"
+              className="px-8 py-3 bg-surface-alt hover:bg-border-strong rounded-lg font-semibold transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -70,7 +70,7 @@ const Hero = () => {
               href="https://github.com/Kaveesha20"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 border border-gray-600 hover:border-gray-400 rounded-lg font-semibold transition-colors"
+              className="px-8 py-3 border border-border-strong hover:border-accent rounded-lg font-semibold transition-colors"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

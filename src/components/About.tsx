@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-slate-900 text-white">
+    <section id="about" className="py-20 bg-background text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -16,7 +16,7 @@ const About = () => {
             About Me
           </h2>
 
-          <div className="max-w-3xl mx-auto space-y-6 text-gray-300 text-lg leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-6 text-foreground-muted text-lg leading-relaxed">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

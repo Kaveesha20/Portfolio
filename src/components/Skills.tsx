@@ -23,7 +23,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-slate-800 text-white">
+    <section id="skills" className="py-20 bg-surface text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,18 +43,18 @@ const Skills = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-slate-900 p-6 rounded-lg hover:shadow-xl transition-shadow"
+                className="bg-background p-6 rounded-lg hover:shadow-xl transition-shadow"
               >
-                <h3 className="text-xl font-semibold mb-4 text-green-400">
+                <h3 className="text-xl font-semibold mb-4 text-accent">
                   {category.title}
                 </h3>
                 <ul className="space-y-2">
                   {category.skills.map((skill) => (
                     <li
                       key={skill}
-                      className="text-gray-300 flex items-center"
+                      className="text-foreground-muted flex items-center"
                     >
-                      <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-accent rounded-full mr-3"></span>
                       {skill}
                     </li>
                   ))}

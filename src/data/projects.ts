@@ -10,56 +10,74 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "hospital-bed-allocation",
-    title: "RL Based Hospital Bed Allocation and Queue Management System",
+    title: "Hospital Bed Allocation and Queue Management System (FYP)",
     description:
-      "Final year project designing RL based real time patient queue prioritization and bed allocation at Karapitiya Teaching Hospital, integrated into a Next.js hospital management system. Includes full CI/CD workflow using GitHub Actions for automated model retraining and deployment.",
-    techTags: ["Next.js", "DDQN", "MARL", "PPO", "GitHub Actions", "MongoDB"],
+      "Designed and implemented a Multi-Agent PPO (MAPPO) model using a CTDE architecture for fairness-aware bed allocation and patient queueing across 4 hospital wards, benchmarked against a real-world dataset from Karapitiya Teaching Hospital. Built and fine-tuned five RL approaches against an FCFS baseline, and independently built the production MLOps retraining pipeline.",
+    techTags: ["PyTorch", "Reinforcement Learning", "Multi-Agent RL", "Azure Cosmos DB", "Next.js", "FastAPI"],
     githubUrl: "",
     liveDemoUrl: "#",
   },
   {
-    id: "food-delivery",
-    title: "Tomato - Food Delivery Application",
+    id: "agentic-rag-system",
+    title: "AI/ML Research Assistant: Agentic RAG System",
     description:
-      "Full stack web application using MERN stack with Stripe integration. Features user authentication, order placement with secure payment, shopping cart functionality, and admin panel for order tracking and product management.",
-    techTags: ["MERN Stack", "Stripe", "Node.js", "React", "MongoDB"],
-    githubUrl: "https://github.com/Kaveesha20/Food-Delivery",
+      "Built an end-to-end agentic RAG system that answers AI/ML research questions by retrieving and grounding responses in real arXiv papers. Exposed the research tools through a Model Context Protocol (MCP) server tested live with Claude Desktop, backed by FastAPI and containerized with a full CI/CD pipeline.",
+    techTags: ["RAG", "MCP", "ChromaDB", "FastAPI", "Docker", "GitHub Actions"],
+    githubUrl: "",
+    liveDemoUrl: "#",
+  },
+  {
+    id: "fleet-operations-pipeline",
+    title: "Fleet Operations Data Pipeline (Lambda Architecture)",
+    description:
+      "Engineered a Lambda architecture pipeline for a simulated ride-hailing fleet, separating a real-time Spark Structured Streaming speed layer from a daily Airflow batch layer. Built a FastAPI dashboard with heartbeat-based health monitoring and automated alerts, fully containerized with Docker Compose.",
+    techTags: ["Kafka", "Spark Structured Streaming", "Airflow", "PostgreSQL", "FastAPI", "Docker"],
+    githubUrl: "",
+    liveDemoUrl: "#",
+  },
+  {
+    id: "kafka-order-pipeline",
+    title: "Kafka Order Processing Pipeline (Avro + DLQ)",
+    description:
+      "Built a Kafka producer-consumer system for order processing using Avro schema serialization for structured, evolvable message contracts, with running average aggregation, retry logic, and a Dead Letter Queue for failed message inspection.",
+    techTags: ["Kafka", "Avro", "Dead Letter Queue", "Python"],
+    githubUrl: "",
     liveDemoUrl: "#",
   },
   {
     id: "newslens",
-    title: "NewsLens - NLP News Summarization & Semantic Search Platform",
+    title: "NewsLens: Automated News Summarization",
     description:
-      "Built and evaluated multiple summarization approaches (T5-small fine-tuning, extractive baseline, prompt engineering with zero-shot/few-shot/chain-of-thought) benchmarked using ROUGE metrics. Implemented Word2Vec based semantic search for related news retrieval.",
-    techTags: ["T5", "Word2Vec", "Python", "Next.js", "NLP", "ROUGE"],
+      "Fine-tuned a T5-small transformer for abstractive news summarization on the BBC News dataset, achieving a validation ROUGE-L of 0.449. Added Word2Vec-based semantic search over the article corpus, served through a FastAPI backend.",
+    techTags: ["T5", "Word2Vec", "Python", "NLP", "FastAPI"],
     githubUrl: "https://github.com/Neshadi/Automated-News-Summarization",
     liveDemoUrl: "#",
   },
   {
-    id: "gesture-mouse",
-    title: "Hand Gesture Mouse Controller",
+    id: "ceylon-compass",
+    title: "Ceylon Compass: AI Sri Lanka Travel Guide",
     description:
-      "Webcam-based hand gesture mouse control system using MediaPipe and a PyTorch gesture classification model (GestureNet), supporting 7 distinct gestures. Developed a web-based control interface with real-time mode switching and WebSocket communication.",
-    techTags: ["Python", "MediaPipe", "PyTorch", "WebSocket", "GestureNet"],
-    githubUrl: "https://github.com/Kaveesha20/gesture-mouse",
-    liveDemoUrl: "#",
-  },
-  {
-    id: "secure-file-drop",
-    title: "Secure Anonymous Drop",
-    description:
-      "Secure, anonymous file transfer application using AES-256-GCM and RSA-4096 encryption for end-to-end secure file sharing.",
-    techTags: ["AES-256-GCM", "RSA-4096", "Encryption", "Python", "Security"],
-    githubUrl: "https://github.com/Neshadi/secure-file-drop",
+      "Built a full-stack AI travel chatbot that answers Sri Lanka travel queries and generates itinerary diagrams on request, using two purpose-tuned LLM calls behind a Flask backend with keyword and regex intent detection.",
+    techTags: ["LLM Prompt Engineering", "Flask", "Mermaid.js", "Groq API"],
+    githubUrl: "",
     liveDemoUrl: "#",
   },
   {
     id: "mapreduce-retail",
-    title: "MapReduce Retail Analysis",
+    title: "Large Scale Retail Sales Analysis (MapReduce)",
     description:
-      "Implemented a MapReduce-based data pipeline to analyze large-scale retail transaction data for sales patterns and insights.",
-    techTags: ["MapReduce", "Big Data", "Data Analysis", "Retail Analytics"],
+      "Built a Hadoop 3.3.6 Streaming MapReduce job to compute total revenue and transaction counts per city across 1,000,000 retail transaction records, using a memory-efficient key-change flush pattern for constant memory use.",
+    techTags: ["Hadoop", "MapReduce", "Docker", "Distributed Data Processing"],
     githubUrl: "https://github.com/Kaveesha20/mapreduce-retail-analysis",
+    liveDemoUrl: "#",
+  },
+  {
+    id: "event-ticket-platform",
+    title: "Event Ticket Booking Platform",
+    description:
+      "Co-built a cloud-native microservices platform (auth, events, booking, notification) with JWT authentication, Redis caching, and PostgreSQL persistence. Designed service boundaries using C4 modeling and event-driven communication via RabbitMQ, deployed with Kubernetes HPA autoscaling.",
+    techTags: ["Microservices", "Kubernetes", "Docker", "RabbitMQ", "CI/CD"],
+    githubUrl: "",
     liveDemoUrl: "#",
   },
 ];
