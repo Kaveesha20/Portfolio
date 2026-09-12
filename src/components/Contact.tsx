@@ -64,8 +64,7 @@ const Contact = () => {
                 <p className="text-foreground-muted text-sm">Kaveesha20</p>
               </motion.a>
             </div>
-
-            <div className="bg-surface p-8 rounded-lg">
+{/*            <div className="bg-surface p-8 rounded-lg">
               <h3 className="text-2xl font-semibold mb-6 text-center">
                 Send a Message
               </h3>
@@ -99,7 +98,7 @@ const Contact = () => {
                   Send Message
                 </button>
               </form>
-            </div>
+            </div>*/}
           </div>
         </motion.div>
       </div>
