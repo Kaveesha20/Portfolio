@@ -8,7 +8,7 @@ const Hero = () => {
       {/* 3D robot scene as full background, loaded via Spline's hosted iframe */}
       <iframe
         src="https://my.spline.design/robotfollowcursorforlandingpage-uXeG2I56c6dI1L8UBntarLp0/"
-        className="absolute inset-0 z-0 w-full h-full border-0"
+        className="absolute inset-0 z-0 w-full h-full border-0 translate-x-6 sm:translate-x-10"
         title="Interactive 3D robot background"
         allow="autoplay; fullscreen"
         loading="lazy"
@@ -27,7 +27,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-left bg-background/70 backdrop-blur-md rounded-3xl px-6 py-10 sm:px-10 sm:py-12 max-w-xl shadow-xl pointer-events-auto"
+          className="text-left max-w-xl pointer-events-auto"
+          style={{ textShadow: "0 2px 24px rgba(251,246,238,0.9), 0 1px 3px rgba(251,246,238,0.9)" }}
         >
           <motion.h1
             className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-foreground"
