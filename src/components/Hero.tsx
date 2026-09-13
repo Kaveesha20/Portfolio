@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16 bg-background">
       {/* 3D robot scene as full background, loaded via Spline's hosted iframe */}
       <iframe
-        src="https://my.spline.design/robotfollowcursorforlandingpage-uXeG2I56c6dI1L8UBntarLp0/"
+        src="https://my.spline.design/robotfollowcursorforlandingpage-uXeG2I56c6dI1L8UBntarLp0/?v=2"
         className="absolute inset-0 z-0 w-full h-full border-0 translate-x-6 sm:translate-x-10"
         title="Interactive 3D robot background"
         allow="autoplay; fullscreen"
